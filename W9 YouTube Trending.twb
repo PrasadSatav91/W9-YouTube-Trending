@@ -1,0 +1,3258 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <DashboardMttwImageObject ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='font-family' value='Franklin Gothic Demi' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='W9 US Videos' inline='true' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='W9. USvideos' name='textscan.0c87m860qnlb3r1byegtk1c5nh6d'>
+            <connection class='textscan' directory='C:/Users/212556812/Downloads/TWB' filename='W9. USvideos.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0c87m860qnlb3r1byegtk1c5nh6d' name='W9. USvideos.csv' table='[W9. USvideos#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='trending_date' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='channel_title' ordinal='3' />
+            <column datatype='integer' name='category_id' ordinal='4' />
+            <column datatype='datetime' name='publish_time' ordinal='5' />
+            <column datatype='string' name='tags' ordinal='6' />
+            <column datatype='integer' name='views' ordinal='7' />
+            <column datatype='integer' name='likes' ordinal='8' />
+            <column datatype='integer' name='dislikes' ordinal='9' />
+            <column datatype='integer' name='comment_count' ordinal='10' />
+            <column datatype='string' name='thumbnail_link' ordinal='11' />
+            <column datatype='boolean' name='comments_disabled' ordinal='12' />
+            <column datatype='boolean' name='ratings_disabled' ordinal='13' />
+            <column datatype='boolean' name='video_error_or_removed' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel_title]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>channel_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[publish_time]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>publish_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[views]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>views</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ratings_disabled]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>ratings_disabled</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_error_or_removed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[video_error_or_removed]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>video_error_or_removed</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[W9. USvideos.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+      </column>
+      <column caption='Like/Dislike Ratio' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_1039487116560576514]' role='measure' type='quantitative' visual-totals='Avg'>
+        <calculation class='tableau' formula='[likes]/[dislikes]' />
+      </column>
+      <column caption='0.0' datatype='real' name='[Calculation_1039487116570247171]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0.0' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' default-format='n#,##0,,.0M;-#,##0,,.0M' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column aggregation='Count' caption='Publish Time' datatype='datetime' name='[publish_time]' role='dimension' type='ordinal' />
+      <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+        <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+        <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+      </column>
+      <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+        <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+      </column>
+      <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+      <column caption='Video Error Or Removed' datatype='boolean' name='[video_error_or_removed]' role='dimension' type='nominal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='Views' datatype='integer' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[views]' role='measure' type='quantitative' />
+      <group caption='Action (Channel Title)' hidden='true' name='[Action (Channel Title)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[channel_title]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/212556812/Documents/My Tableau Repository/Datasources/W9 US Videos.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/12/2020 03:00:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='W9 US Videos' increment-value='%null%' refresh-type='create' rows-inserted='40949' timestamp-start='2020-03-12 03:00:08.138' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>video_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[video_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7742</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trending_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trending_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trending_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7742</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2862</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[category_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publish_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[publish_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publish_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>7742</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags</remote-alias>
+              <ordinal>6</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7137</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>views</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[views]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>views</remote-alias>
+              <ordinal>7</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38942</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19430</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dislikes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dislikes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dislikes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5133</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comment_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[comment_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comment_count</remote-alias>
+              <ordinal>10</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8683</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thumbnail_link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thumbnail_link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thumbnail_link</remote-alias>
+              <ordinal>11</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7742</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comments_disabled</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[comments_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comments_disabled</remote-alias>
+              <ordinal>12</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ratings_disabled</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[ratings_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ratings_disabled</remote-alias>
+              <ordinal>13</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video_error_or_removed</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[video_error_or_removed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_error_or_removed</remote-alias>
+              <ordinal>14</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>15</ordinal>
+              <family>W9. USvideos.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7788</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.535235' measure-ordering='alphabetic' measure-percentage='0.464765' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='W9 US Category ID' inline='true' name='federated.1xzbr7a00yb3ut19n60ez04klbzw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='W9. US_category_id' name='semistructpassivestore-direct.0nwre7k07tonoj1clfp6c0vldnio'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/212556812/Downloads/TWB' filename='W9. US_category_id.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[W9. US_category_id.json]'>
+                  <map key='items' value='true' />
+                  <map key='items.Value' value='true' />
+                  <map key='items.Value.snippet' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.0nwre7k07tonoj1clfp6c0vldnio' name='W9. US_category_id.json' table='[W9. US_category_id.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[W9. US_category_id.json].[Document Index (generated)]' />
+          <map key='[assignable]' value='[W9. US_category_id.json].[items.Value.snippet.assignable]' />
+          <map key='[channelId]' value='[W9. US_category_id.json].[items.Value.snippet.channelId]' />
+          <map key='[etag (items)]' value='[W9. US_category_id.json].[items.Value.etag]' />
+          <map key='[etag]' value='[W9. US_category_id.json].[etag]' />
+          <map key='[id]' value='[W9. US_category_id.json].[items.Value.id]' />
+          <map key='[items Index (generated)]' value='[W9. US_category_id.json].[items.Index (generated)]' />
+          <map key='[kind (items)]' value='[W9. US_category_id.json].[items.Value.kind]' />
+          <map key='[kind]' value='[W9. US_category_id.json].[kind]' />
+          <map key='[title]' value='[W9. US_category_id.json].[items.Value.snippet.title]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>etag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[etag]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>etag</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[items Index (generated)]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.etag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[etag (items)]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.etag</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.kind</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[kind (items)]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.kind</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.snippet.assignable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[assignable]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.snippet.assignable</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.snippet.channelId</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[channelId]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.snippet.channelId</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items.Value.snippet.title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>items.Value.snippet.title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kind</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[kind]</local-name>
+            <parent-name>[W9. US_category_id.json]</parent-name>
+            <remote-alias>kind</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per W9. US_category_id.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at W9. US_category_id.json level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per items]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([items Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at items level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Assignable' datatype='boolean' hidden='true' name='[assignable]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.snippet.assignable</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Channel Id' datatype='string' hidden='true' name='[channelId]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.snippet.channelId</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Etag (Items)' datatype='string' hidden='true' name='[etag (items)]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.etag</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Etag' datatype='string' hidden='true' name='[etag]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>etag</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[items Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>items.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Kind (Items)' datatype='string' hidden='true' name='[kind (items)]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.kind</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Kind' datatype='string' hidden='true' name='[kind]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>kind</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.snippet.title</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+      <folder name='Items' role='dimensions'>
+        <folder-item name='[etag (items)]' type='field' />
+        <folder-item name='[id]' type='field' />
+        <folder-item name='[items Index (generated)]' type='field' />
+        <folder-item name='[kind (items)]' type='field' />
+      </folder>
+      <folder name='Snippet' role='dimensions'>
+        <folder-item name='[assignable]' type='field' />
+        <folder-item name='[channelId]' type='field' />
+        <folder-item name='[title]' type='field' />
+      </folder>
+      <folder name='W9. US category id' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[etag]' type='field' />
+        <folder-item name='[kind]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/212556812/Documents/My Tableau Repository/Datasources/W9 US Category ID.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/12/2020 03:00:28 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[id]' value='[Extract].[items.Value.id]' />
+            <map key='[title]' value='[Extract].[items.Value.snippet.title]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='W9 US Category ID' increment-value='%null%' refresh-type='create' rows-inserted='32' timestamp-start='2020-03-12 03:00:28.653' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>items.Value.id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>items.Value.id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>W9. US_category_id.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>items.Value.snippet.title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>items.Value.snippet.title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>W9. US_category_id.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.571669' measure-ordering='alphabetic' measure-percentage='0.428331' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:title:nk]' palette='red_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Trailers&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Action/Adventure&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shorts&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Family&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Documentary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anime/Animation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sci-Fi/Fantasy&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;Travel &amp; Events&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Drama&quot;</bucket>
+            </map>
+            <map to='#ba173a'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Horror&quot;</bucket>
+            </map>
+            <map to='#c61e3b'>
+              <bucket>&quot;Shows&quot;</bucket>
+            </map>
+            <map to='#d2283d'>
+              <bucket>&quot;Science &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#db323f'>
+              <bucket>&quot;Pets &amp; Animals&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Videoblogging&quot;</bucket>
+            </map>
+            <map to='#e33e43'>
+              <bucket>&quot;People &amp; Blogs&quot;</bucket>
+            </map>
+            <map to='#eb4c48'>
+              <bucket>&quot;Nonprofits &amp; Activism&quot;</bucket>
+            </map>
+            <map to='#ef5a4d'>
+              <bucket>&quot;News &amp; Politics&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Thriller&quot;</bucket>
+            </map>
+            <map to='#f36855'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#f67561'>
+              <bucket>&quot;Howto &amp; Style&quot;</bucket>
+            </map>
+            <map to='#f8826b'>
+              <bucket>&quot;Gaming&quot;</bucket>
+            </map>
+            <map to='#fa8f78'>
+              <bucket>&quot;Film &amp; Animation&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Movies&quot;</bucket>
+            </map>
+            <map to='#fc9b87'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+            <map to='#fda695'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#feb2a4'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Foreign&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Classics&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Short Movies&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Autos &amp; Vehicles&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column-instance column='[category_id]' derivation='None' name='[none:category_id:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1xzbr7a00yb3ut19n60ez04klbzw'>
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>items.Value.id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[id]' derivation='None' name='[none:id:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.16b7fxp0s4f8ex14xqixg1q19p4s' target='federated.1xzbr7a00yb3ut19n60ez04klbzw'>
+      <column-mapping>
+        <map key='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:category_id:ok]' value='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:id:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <shared-views>
+    <shared-view name='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+      <datasources>
+        <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+        <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+        </column>
+        <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]'>
+        <groupfilter function='member' level='[yr:Calculation_1039487116550017025:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='YouTube Trending' type='sheet' worksheet='Channels Most Featured' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='YouTube Trending' />
+      </command>
+    </action>
+    <action caption='Donuts' name='[Action2]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='YouTube Trending' type='sheet'>
+        <exclude-sheet name='Average like/dislike ratio' />
+        <exclude-sheet name='Channels Most Featured' />
+        <exclude-sheet name='Number of channels' />
+        <exclude-sheet name='Number of comments' />
+        <exclude-sheet name='Number of videos' />
+        <exclude-sheet name='Number of views' />
+        <exclude-sheet name='Trending Stats' />
+        <exclude-sheet name='Video List' />
+      </source>
+      <command command='tsc:brush'>
+        <param name='exclude' value='Average like/dislike ratio,Channels Most Featured,Number of channels,Number of comments,Number of videos,Number of views,Trending Stats,Video List' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='YouTube Trending' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average like/dislike ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Like/Dislike Ratio' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_1039487116560576514]' role='measure' type='quantitative' visual-totals='Avg'>
+              <calculation class='tableau' formula='[likes]/[dislikes]' />
+            </column>
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Avg' name='[avg:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='173' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:Calculation_1039487116560576514:vtavg:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:Calculation_1039487116560576514:vtavg:qk]&gt;</run>
+                <run>&#10;Like/dislike ratio</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{F4989404-C78C-46E0-B649-FBE8075C4658}' />
+    </worksheet>
+    <worksheet name='Category Donut - Videos'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#282828'>Number of videos by category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+            <datasource caption='W9 US Category ID' name='federated.1xzbr7a00yb3ut19n60ez04klbzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='0.0' datatype='real' name='[Calculation_1039487116570247171]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.0' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[title]' derivation='CountD' name='[pcto:ctd:title:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1039487116570247171]' derivation='Sum' name='[sum:Calculation_1039487116570247171:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1xzbr7a00yb3ut19n60ez04klbzw'>
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>items.Value.id</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>items.Value.snippet.title</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:ctd:title:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:ctd:title:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:ctd:title:qk]' />
+              <text column='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' />
+              <color column='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]&gt; : </run>
+                <run bold='true' fontcolor='#ff0000' fontsize='14'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:ctd:title:qk]&gt;</run>
+                <run>&#10;(&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]&gt; videos)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:ctd:title:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk] + [federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk])</rows>
+        <cols />
+        <join-lod-include-overrides>
+          <column>[federated.1xzbr7a00yb3ut19n60ez04klbzw].[id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{C3A6F3DB-3CDC-41ED-82BA-7BAD31C6F87E}' />
+    </worksheet>
+    <worksheet name='Category Donut - Views'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#282828'>Amount of views by category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+            <datasource caption='W9 US Category ID' name='federated.1xzbr7a00yb3ut19n60ez04klbzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='0.0' datatype='real' name='[Calculation_1039487116570247171]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.0' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[pcto:sum:views:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1039487116570247171]' derivation='Sum' name='[sum:Calculation_1039487116570247171:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column caption='Views' datatype='integer' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[views]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1xzbr7a00yb3ut19n60ez04klbzw'>
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>items.Value.id</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>items.Value.snippet.title</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]&gt; : </run>
+                <run bold='true' fontcolor='#ff0000' fontsize='14'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>(</run>
+                <run>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]&gt; views)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]' />
+              <text column='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' />
+              <color column='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]&gt; : </run>
+                <run bold='true' fontcolor='#ff0000' fontsize='14'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>(</run>
+                <run>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]&gt; views)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <wedge-size column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[pcto:sum:views:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk] + [federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116570247171:qk])</rows>
+        <cols />
+        <join-lod-include-overrides>
+          <column>[federated.1xzbr7a00yb3ut19n60ez04klbzw].[id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{656BB5CF-F13D-4136-9F0D-1C39AA70A964}' />
+    </worksheet>
+    <worksheet name='Channels Most Featured'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[channel_title]' derivation='None' name='[none:channel_title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]' direction='DESC' using='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Number of Records:qk]' />
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Number of Records:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]' value='30' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]' value='true' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' value='Year'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#282828' fontsize='14'>Year</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]&gt;: </run>
+                <run bold='true' fontcolor='#ff0000'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Number of Records:qk]&gt;</run>
+                <run bold='true'>Æ </run>
+                <run>days trending</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]</rows>
+        <cols>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{4E39DC08-0BEC-4A11-BC09-C9A0C5CD516A}' />
+    </worksheet>
+    <worksheet name='Number of channels'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[channel_title]' derivation='CountD' name='[ctd:channel_title:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='173' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:channel_title:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:channel_title:qk]&gt;</run>
+                <run>&#10;Channels featured</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{E0EFDB75-0D83-4DBA-8AC5-3ACC0A2FF3DC}' />
+    </worksheet>
+    <worksheet name='Number of comments'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column caption='Comment Count' datatype='integer' default-format='n#,##0,,.0M;-#,##0,,.0M' name='[comment_count]' role='measure' type='quantitative' />
+            <column-instance column='[comment_count]' derivation='Sum' name='[sum:comment_count:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:comment_count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:comment_count:qk]&gt;</run>
+                <run>&#10;Comments in videos</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{E61BD5AA-5BF2-42A4-BEE5-29AB15810646}' />
+    </worksheet>
+    <worksheet name='Number of videos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='173' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[ctd:title:qk]&gt;</run>
+                <run>&#10;Trending videos in &lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{53D88F4C-22A7-4598-A31C-01AC03FFD603}' />
+    </worksheet>
+    <worksheet name='Number of views'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column caption='Views' datatype='integer' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[views]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='173' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]&gt;</run>
+                <run>&#10;Views for trending videos</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{A494C478-FB3F-4CA0-ACD3-9C6173506C41}' />
+    </worksheet>
+    <worksheet name='Trending Stats'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Like/Dislike Ratio' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_1039487116560576514]' role='measure' type='quantitative' visual-totals='Avg'>
+              <calculation class='tableau' formula='[likes]/[dislikes]' />
+            </column>
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Avg' name='[avg:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column-instance column='[comment_count]' derivation='Avg' name='[avg:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Avg' name='[avg:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column caption='Comment Count' datatype='integer' default-format='n#,##0,,.0M;-#,##0,,.0M' name='[comment_count]' role='measure' type='quantitative' />
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Max' name='[max:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column-instance column='[comment_count]' derivation='Max' name='[max:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Max' name='[max:views:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Min' name='[min:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column-instance column='[comment_count]' derivation='Min' name='[min:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Min' name='[min:views:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Stdev' name='[std:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column-instance column='[comment_count]' derivation='Stdev' name='[std:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Stdev' name='[std:views:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column caption='Views' datatype='integer' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[views]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:views:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:views:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:views:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:views:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:Calculation_1039487116560576514:vtavg:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:Calculation_1039487116560576514:vtavg:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:Calculation_1039487116560576514:vtavg:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:Calculation_1039487116560576514:vtavg:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:comment_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:comment_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:comment_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:comment_count:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:views:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:views:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:views:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:views:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:Calculation_1039487116560576514:vtavg:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:Calculation_1039487116560576514:vtavg:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:Calculation_1039487116560576514:vtavg:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:Calculation_1039487116560576514:vtavg:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:comment_count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:comment_count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:comment_count:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]' value='28' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:views:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:views:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:views:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:views:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[max:comment_count:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[min:comment_count:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[avg:comment_count:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[std:comment_count:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#ffcdcd' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffcdcd' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]</rows>
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{3E5A3740-0530-47AB-B695-D18A414B6895}' />
+    </worksheet>
+    <worksheet name='Video List'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+            <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+            </column>
+            <column caption='Like/Dislike Ratio' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_1039487116560576514]' role='measure' type='quantitative' visual-totals='Avg'>
+              <calculation class='tableau' formula='[likes]/[dislikes]' />
+            </column>
+            <column-instance column='[description]' derivation='Attribute' name='[attr:description:nk]' pivot='key' type='nominal' />
+            <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+            <column caption='Comment Count' datatype='integer' default-format='n#,##0,,.0M;-#,##0,,.0M' name='[comment_count]' role='measure' type='quantitative' />
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='None' name='[none:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1039487116560576514]' derivation='Sum' name='[sum:Calculation_1039487116560576514:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+            <column-instance column='[comment_count]' derivation='Sum' name='[sum:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dislikes]' derivation='Sum' name='[sum:dislikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[likes]' derivation='Sum' name='[sum:likes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Trending Year' datatype='integer' name='[trending_date - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 1 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Day' datatype='integer' name='[trending_date - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column aggregation='Sum' caption='Trending Month' datatype='integer' name='[trending_date - Split 3]' role='dimension' type='ordinal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[trending_date]'>
+              <calculation class='tableau' formula='INT( SPLIT( [trending_date], &quot;.&quot;, 3 ) )' />
+            </column>
+            <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+            <column caption='Views' datatype='integer' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[views]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]'>
+            <groupfilter function='level-members' level='[channel_title]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:title:nk]' direction='DESC' using='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+          <slices>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</column>
+            <column>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[Action (Channel Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:Calculation_1039487116550017025:ok]' value='68' />
+            <format attr='width' field='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:title:nk]' value='120' />
+            <format attr='band-color' scope='rows' value='#ffcdcd' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffcdcd' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:likes:qk]' />
+              <tooltip column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:dislikes:qk]' />
+              <tooltip column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116560576514:vtavg:qk]' />
+              <tooltip column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:comment_count:qk]' />
+              <tooltip column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[attr:description:nk]' />
+              <text column='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:title:nk]&gt;&#10;</run>
+                <run fontcolor='#666666'>Trending on &lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:Calculation_1039487116550017025:ok]&gt;</run>
+                <run>&#10;&#10;&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:views:qk]&gt; views&#10;&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:likes:qk]&gt; likes, &lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:dislikes:qk]&gt; dislikes </run>
+                <run fontcolor='#666666'>(&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:Calculation_1039487116560576514:vtavg:qk]&gt;)</run>
+                <run>&#10;&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[sum:comment_count:qk]&gt; comments.&#10;&#10;</run>
+                <run fontcolor='#787878'>Description:&#9;</run>
+                <run>&lt;[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[attr:description:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:title:nk] / [federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:Calculation_1039487116550017025:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D83AF751-AE4B-4854-AFAB-41B71F5263CA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='YouTube Trending'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='28'>Trending Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='750' maxwidth='1200' minheight='750' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='W9 US Videos' name='federated.16b7fxp0s4f8ex14xqixg1q19p4s' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16b7fxp0s4f8ex14xqixg1q19p4s'>
+        <column aggregation='Count' caption='Trending Date Calc' datatype='date' datatype-customized='true' name='[Calculation_1039487116550017025]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yy-MM-dd&quot;, STR([trending_date - Split 1]) + &quot;-&quot; + STR([trending_date - Split 3]) + &quot;-&quot; + STR([trending_date - Split 2]) )) ' />
+        </column>
+        <column-instance column='[Calculation_1039487116550017025]' derivation='Year' name='[yr:Calculation_1039487116550017025:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97866' id='24' param='horz' type='layout-flow' w='98666' x='667' y='1067'>
+            <zone h='97866' id='6' param='vert' type='layout-flow' w='98666' x='667' y='1067'>
+              <zone fixed-size='50' h='7200' id='10' is-fixed='true' param='horz' type='layout-flow' w='98666' x='667' y='1067'>
+                <zone alt-text='YouTube Logo' fixed-size='194' h='6667' id='28' is-fixed='true' is-scaled='1' param='C:/Users/212556812/Downloads/TWB/youtube_logo-300x67.png' type='bitmap' w='16834' x='667' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6667' id='8' type='title' w='67666' x='17501' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='background-color' value='#ff0000' />
+                  </zone-style>
+                </zone>
+                <zone h='6667' id='29' mode='dropdown' name='Channels Most Featured' param='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' type='filter' values='database' w='14166' x='85167' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='11' />
+                    <format attr='margin-top' value='12' />
+                    <format attr='margin-right' value='5' />
+                    <format attr='margin-bottom' value='12' />
+                    <format attr='margin-left' value='5' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-bottom' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='74' h='9867' id='13' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type='layout-flow' w='98666' x='667' y='8267'>
+                <zone h='8266' id='14' name='Number of videos' show-title='false' w='19583' x='1167' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8266' id='15' name='Number of views' show-title='false' w='19583' x='20750' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8266' id='16' name='Number of channels' show-title='false' w='19500' x='40333' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8266' id='17' name='Average like/dislike ratio' show-title='false' w='19500' x='59833' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8266' id='18' name='Number of comments' show-title='false' w='19500' x='79333' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#282828' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <format attr='margin' value='0' />
+                  <format attr='padding' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='76532' id='19' layout-strategy-id='distribute-evenly' param='horz' type='layout-flow' w='98666' x='667' y='18134'>
+                <zone h='76534' id='20' name='Channels Most Featured' w='24666' x='667' y='18133'>
+                  <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='76534' id='21' name='Trending Stats' w='24667' x='25333' y='18133'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='162' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='76534' id='32' param='vert' type='layout-flow' w='24667' x='50000' y='18133'>
+                  <zone h='38267' id='22' name='Category Donut - Videos' w='24667' x='50000' y='18133'>
+                    <layout-cache cell-count-w='1' minheight='138' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38267' id='33' name='Category Donut - Views' w='24667' x='50000' y='56400'>
+                    <layout-cache cell-count-w='1' minheight='138' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='76534' id='26' name='Video List' show-title='false' w='24666' x='74667' y='18133'>
+                  <layout-cache fixed-size-w='285' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='4267' id='9' type='empty' w='98666' x='667' y='94666'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontsize='28'>Trending Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='38' param='vert' type='layout-flow' w='98666' x='667' y='1067'>
+                <zone h='6667' id='8' type='title' w='67666' x='17501' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ff0000' />
+                  </zone-style>
+                </zone>
+                <zone alt-text='YouTube Logo' fixed-size='42' h='6667' id='28' is-fixed='true' is-scaled='1' param='C:/Users/212556812/Downloads/TWB/youtube_logo-300x67.png' type='bitmap' w='16834' x='667' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='54' h='8266' id='14' is-fixed='true' name='Number of videos' show-title='false' w='19583' x='1167' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='54' h='8266' id='15' is-fixed='true' name='Number of views' show-title='false' w='19583' x='20750' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='54' h='8266' id='16' is-fixed='true' name='Number of channels' show-title='false' w='19500' x='40333' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='54' h='8266' id='17' is-fixed='true' name='Average like/dislike ratio' show-title='false' w='19500' x='59833' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='54' h='8266' id='18' is-fixed='true' name='Number of comments' show-title='false' w='19500' x='79333' y='9067'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6667' id='29' mode='dropdown' name='Channels Most Featured' param='[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]' type='filter' values='database' w='14166' x='85167' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76534' id='20' is-fixed='true' name='Channels Most Featured' w='24666' x='667' y='18133'>
+                  <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76534' id='21' is-fixed='true' name='Trending Stats' w='24667' x='25333' y='18133'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='162' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='279' h='38267' id='22' is-fixed='true' name='Category Donut - Videos' w='24667' x='50000' y='18133'>
+                  <layout-cache cell-count-w='1' minheight='138' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76534' id='26' is-fixed='true' name='Video List' show-title='false' w='24666' x='74667' y='18133'>
+                  <layout-cache fixed-size-w='285' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='279' h='38267' id='33' is-fixed='true' name='Category Donut - Views' w='24667' x='50000' y='56400'>
+                  <layout-cache cell-count-w='1' minheight='138' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E6EF5E61-4768-481E-A2EA-5A91BFAF471A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' maximized='true' name='YouTube Trending'>
+      <viewpoints>
+        <viewpoint name='Average like/dislike ratio'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Category Donut - Videos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Category Donut - Views'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Channels Most Featured' />
+        <viewpoint name='Number of channels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of comments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of videos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of views'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trending Stats'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Video List' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A5FBE68B-9357-4CDF-AAC9-A74BDD82AD96}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average like/dislike ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{36402345-6517-4DC0-A81C-80DB939C19A9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Category Donut - Videos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{22C4BAC5-188F-4DAE-88CE-4B8A6E67C05C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Category Donut - Views'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xzbr7a00yb3ut19n60ez04klbzw].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{09DEFCFF-73D5-4132-8EF1-E7151113D8EF}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Channels Most Featured'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{74C2474E-632D-488A-B7E3-DB39118F0CEA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Number of channels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8F64E7D0-954E-42AA-BDB6-10E685545903}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Number of comments'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0061BE7A-D960-47BB-83B9-1D65B404B20A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Number of videos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{38BBB34B-C84F-49C2-8CC0-A44736B0FA90}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Number of views'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[yr:Calculation_1039487116550017025:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{13542DEE-9105-45C7-B293-52C632BBB825}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Trending Stats'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6FE0E1BD-B4E0-4173-8E59-24C0E92FB46F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Video List'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:Calculation_1039487116550017025:ok]</field>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:channel_title:nk]</field>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:description:nk]</field>
+            <field>[federated.16b7fxp0s4f8ex14xqixg1q19p4s].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB24D167-C888-4A4D-8884-089DECB4B547}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='YouTube Trending' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
